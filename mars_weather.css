@@ -5,24 +5,59 @@ html{
     box-sizing: inherit;
 }
 body{
-    display: flex;
+	display: flex;
     align-items: center;
     justify-content: center;
-	flex-direction: column;
-	background-color: #022B3A;
-	font-family: 'Dosis', sans-serif;
-	color: white;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    color: #022B3A;
+}
+#header{
+    width: 500px;
+    height: 900px;
+    background: #33658A;
+    color: white;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px auto;
+    grid-template-areas: "title title mars""card card card";
+    padding: 40px 20px;
+    box-shadow: 0px 0px 113px -36px rgba(120,120,120,1);
+    margin-bottom: 50px;
+}
+#header h1{
+    grid-area: title;
+    margin-top: 75px;
+    margin-left: 20px;
+}
+#header img{
+	width: 140px;
+    grid-area: mars;
+    margin-top: 60px;
 }
 #root{
-    display: grid;
+	grid-area: card;
+}
+#root{
+display: grid;
     width: 500px;
+    height: 900px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-        border-right: solid white 1px;
-    border-left: solid white 1px;
+    box-shadow: 0px 0px 113px -36px rgba(120,120,120,1);
+    border-radius: 20px;
+    background: white;
+    color: #101D42;
+    margin-top: 30px;
+    margin-left: 90px;
+
 }
 #root p{
     font-size: 20px;
@@ -33,16 +68,20 @@ body{
 }
 #root h1{
     grid-column: 1/-1;
-    border-bottom: solid white 1px;
-    width: 70%;
-    margin: auto;
+    width: 100%;
+    background: #022B3A;
+    color: white;
+    margin: 0;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    text-align: start;
+    padding: 50px 0 5px 30px;
 }
 span{
     width: 70px;
     height: 70px;
     border-radius: 100%;
     border: solid white 2px;
-    color: white;
     text-align: center;
     margin-top: 5px;
     display: flex;
