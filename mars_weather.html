@@ -2,19 +2,39 @@
 <html>
 <head>
 	<title>Mars Weather App</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="mars_weather.css">
-	<link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
 <body>
-	<h1>MARS WEATHER APP</h1>
+	<p id='intro'>This app uses an API that reflects the information send back by the Curiosity Rover in Mars. The rover has 2 boom sensors on its mast in order to gather environmental information.<br><br>Although the rover is intented to send information back daily, extreme weather might make it impossible. This app reflects the latest data published by the Centro the Astrobiologia (CAB), Spain.
+	</p>
 	<div id='root'>
-		<div class='divider sol'><p>Sol<span>2088</span></p></div>
-		<div class='divider season'><p>Month<span>7</span></p></div>
-		<div class='divider min-t'><p>Min C<span>-58</span></p></div>
-		<div class='divider max-t'><p>Max C<span>-16</span></p></div>
-		<div class='divider atmo'><p>Opacity<span>Sunny</span></p></div>
-		<div class='divider sunset'><p>Sunset<span>17:22</span></p></div>
-		<div class='divider sunrise'><p>Sunrise<span>05:18</span></p></div>
+		<h1>MARS WEATHER APP</h1>
+		<div class='sol'><p>Sol<span>2088</span></p></div>
+		<div class='season'><p>Month<span>7</span></p></div>
+		<div class='min-t'><p>Min C<span>-58</span></p></div>
+		<div class='max-t'><p>Max C<span>-16</span></p></div>
+		<div class='atmo'><p>Opacity<span>Sunny</span></p></div>
+		<div class='sunset'><p>Sunset<span>17:22</span></p></div>
+		<div class='sunrise'><p>Sunrise<span>05:18</span></p></div>
 	</div>
+	<dl id='description'>
+		<dt>◗ Sol</dt>
+		<dd>The term sol is used to refer to the duration of a day on Mars. A sol is about 24 hours and 40 minutes. For Curiosity, sol 0 corresponds with its landing day on Mars.</dd>
+		<dt>◗ Season</dt>
+		<dd>A Martian year is divided in 12 months, as Earth's. However, Martian months are from 46 to 67 sols (Martian days) long. The longest one is the month 3 (67 sols), and the shortest one is the month 9 (46 sols) Martian months mark seasonal changes. In the southern hemisphere (Curiosity rover location) the autumn starts in month 1; the winter in month 4; the spring in month 7; and the summer in month 10.</dd>
+		<dt>◗ Temperature</dt>
+		<dd>Mars is farther from the Sun than Earth, it makes that Mars is colder than our planet. Moreover, Martian�s atmosphere, which is extremely tenuous, does not retain the heat; hence the difference between day and night's temperatures is more pronounced than in our planet.</dd>
+		<dt>◗ Opacity</dt>
+		<dd>Weather on Mars is more extreme than Earth's. Mars is cooler and with bigger differences between day and night temperatures. Moreover, dust storms lash its surface. However, Mars' and Earth's climates have important similarities, such as the polar ice caps or seasonal changes. As on Earth, on Mars we can have sunny, cloudy or windy days, for example.</dd>
+		<dt>◗ Sunset and Sunrise</dt>
+		<dd>The duration of a Martian day (sol) is about 24 hours and 40 minutes. The duration of daylight varies along the Martian year, as on Earth.</dd>
+	</dl>
+	<footer>
+		<p>
+			For more information visit <a href="https://mars.nasa.gov/msl/mission/instruments/environsensors/rems/">Nasa Rems</a>	and <a href="http://www.cab.inta.es/es/inicio">Centro de Astrobiologia</a>
+		</p>
+	</footer>
 </body>
 </html>
