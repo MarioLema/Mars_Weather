@@ -4,29 +4,28 @@
 	<title>Mars Weather App</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="mars_weather.css">
-	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 <body>
-	<p id='intro'>This app uses an API that reflects the information send back by the Curiosity Rover in Mars. The rover has 2 boom sensors on its mast in order to gather environmental information.<br><br>Although the rover is intented to send information back daily, extreme weather might make it impossible. This app reflects the latest data published by the Centro the Astrobiologia (CAB), Spain.
-	</p>
-
 	<div id='header'>
 		<h1>MARS WEATHER</h1>
-		<img src="mars.svg">
-	
-
-	<div id='root'>
-		
-		<div class='sol'><p>Sol<span>2088</span></p></div>
-		<div class='season'><p>Month<span>7</span></p></div>
-		<div class='min-t'><p>Min C<span>-58</span></p></div>
-		<div class='max-t'><p>Max C<span>-16</span></p></div>
-		<div class='atmo'><p>Opacity<span>Sunny</span></p></div>
-		<div class='sunset'><p>Sunset<span>17:22</span></p></div>
-		<div class='sunrise'><p>Sunrise<span>05:18</span></p></div>
+		<img src="mars.svg" id='marsPlanet'>
+		<div id='root'>
+			<img src="orbit.png" class='orbit'>
+			<img src="calendar.svg" class='calendar icon'>
+			<img src="thermometer.svg" class='thermometer icon'>
+			<img src="sand.svg" class='sand icon'>
+			<img src="sunset.svg" class='sunset icon'>
+			<p class='sol point'>SOL: 2088</p>
+			<p class='season point dataPoint'>MONTH: 7</p>
+			<p class='temperature point dataPoint'>MIN C: -16<br>MAX C: -56</p>
+			<p class='atmo dataPoint point'>OPACITY:  Sunny</p>
+			<p class='sunTime point'>SUNRISE: 12:00<br>SUNSET: 17:22</p>
+		</div>
 	</div>
-	</div>
 
+	<p id='intro'>This app uses an API that reflects the information send back by the Curiosity Rover in Mars. The rover has 2 boom sensors on its mast in order to gather environmental information.<br><br>Although the rover is intented to send information back daily, extreme weather might make it impossible. This app reflects the latest data published by the Centro the Astrobiologia (CAB), Spain.
+	</p>
 
 	<dl id='description'>
 		<dt>◗ Sol</dt>
