@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg8663"
+   version="1.1"
+   viewBox="0 0 12.7 12.7"
+   height="48"
+   width="48">
+  <defs
+     id="defs8657">
+    <linearGradient
+       gradientTransform="translate(164.22753,-47.161487)"
+       gradientUnits="userSpaceOnUse"
+       y2="217.08641"
+       x2="-76.706352"
+       y1="218.56792"
+       x1="-175.41283"
+       id="linearGradient7677"
+       xlink:href="#linearGradient7675" />
+    <linearGradient
+       id="linearGradient7675">
+      <stop
+         id="stop7671"
+         offset="0"
+         style="stop-color:#d4aa00;stop-opacity:1;" />
+      <stop
+         id="stop7673"
+         offset="1"
+         style="stop-color:#d4aa00;stop-opacity:0;" />
+    </linearGradient>
+    <filter
+       id="filter7743"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur7737"
+         result="blur"
+         stdDeviation="0.1" />
+      <feComposite
+         id="feComposite7739"
+         result="composite1"
+         operator="in"
+         in2="blur"
+         in="SourceGraphic" />
+      <feComposite
+         id="feComposite7741"
+         result="composite2"
+         operator="in"
+         in2="composite1"
+         in="composite1" />
+    </filter>
+  </defs>
+  <metadata
+     id="metadata8660">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-284.3)"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:url(#linearGradient7677);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.9859252;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter7743)"
+       id="rect7631-3"
+       width="92.207985"
+       height="2.8036211"
+       x="-11.185296"
+       y="168.6028"
+       ry="1.4018105"
+       transform="matrix(0.1122509,-0.06480808,0.06480808,0.1122509,-8.5873278,273.82984)" />
+  </g>
+</svg>

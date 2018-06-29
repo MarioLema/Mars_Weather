@@ -11,27 +11,32 @@ body{
     flex-direction: column;
 	font-family: 'Josefin Sans', sans-serif;
     color: #022B3A;
+    background: floralwhite;
+}
+#container{
+	height: 450px;
+	width: 350px;
+	margin: 50px;
 }
 #intro, #description{
 	    width: 70%;
 	    margin-top: 20px;
 }
-#header{
-    width: 350px;
-    height: 450px;
-    background: url(star_background.svg);
-    border-radius: 15px;
-    padding: 10px;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 8fr;
-    grid-template-areas: 
-    "title title"
-    "root root";
-    box-shadow: 0px 0px 113px -36px rgba(120,120,120,1);
-    margin-bottom: 100px;
-    margin-top: 50px;
+#header {
+	width: 350px;
+	height: 450px;
+	background: url(star_background.svg);
+	border-radius: 15px;
+	padding: 10px;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr 8fr;
+	grid-template-areas: "title title" "root root";
+	box-shadow: 0px 0px 4px 1px rgba(235,235,235,1);
+	position: absolute;
+	z-index: 10;	
+     overflow: hidden;
 }
 #header h1{
 	color: white;
@@ -44,26 +49,81 @@ body{
     grid-column: 2/-1;
     grid-row: 1/2;
 }
-#root{
-    width: 100%;
-    height: 450px;
-    background: white;
-    grid-area: root;
-    border-radius: 15px;
-    margin-left: 50px;
-    margin-top: -3em;
-    box-shadow: 0px 0px 113px -36px rgba(120,120,120,1);
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "sol sol orbit"
-    "calendar season season"
-    "temperature temperature thermometer"
-    "sand atmo atmo"
-    "sunTime sunTime sunset";
-    align-items: center;
-    justify-items: center;
+#marsPlanetBig{
+	position: absolute;
+    width: 450px;
+    align-self: flex-end;
+    justify-self: center;
+    transform: translate(0px, 356px);
+}
+#rover{
+	width: 80px;
+    position: absolute;
+    align-self: flex-end;
+    justify-self: center;
+    z-index: 5;
+    transform: translate(0, -81px);
+}
+.wheel{
+	position: absolute;
+    z-index: 5;
+    width: 21px;
+        top: 343px;
+}
+.wheel1{
+    left: 144px;
+
+}
+.wheel2{
+
+    left: 166px;
+}
+.wheel3{
+	left: 188px;
+}
+.meteor{
+	position: absolute;
+}
+.meteor1{
+    left: 142px;
+    top: 111px;
+	width: 160px;
+}
+.meteor2{
+	left: 104px;
+    top: 81px;
+    width: 236px;
+
+}
+.meteor3{
+	left: 172px;
+    top: 119px;
+    width: 148px;
+
+}
+
+
+
+
+
+
+
+#root {
+	width: 350px;
+	height: 450px;
+	background: white;
+	grid-area: root;
+	border-radius: 15px;
+	box-shadow:0px 0px 4px 1px rgba(235,235,235,1);
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto 1fr 1fr 1fr 1fr;
+	grid-template-areas: "sol sol orbit" "calendar season season" "temperature temperature thermometer" "sand atmo atmo" "sunTime sunTime sunset";
+	align-items: center;
+	justify-items: center;
+	position: absolute;
+	transform: translate(20px, 20px);
+	z-index: 5;
 }
 .orbit{
 	grid-area: orbit;
@@ -134,4 +194,166 @@ a:hover{
 }
 a:visited{
 	color: black;
+}
+
+/*=============CARD ANIMATIONS==========================*/
+
+.headerDown{
+	animation-duration: 300ms;
+  	animation-name: headerDown;
+  	animation-iteration-count: 1;
+  	animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  	animation-fill-mode: forwards;
+}
+
+.rootUp{
+	animation-duration: 300ms;
+  	animation-name: rootUp;
+  	animation-iteration-count: 1;
+  	animation-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  	animation-fill-mode: forwards;
+}
+
+.headerUp{
+	animation-duration: 300ms;
+  	animation-name: headerDown;
+  	animation-iteration-count: 1;
+  	animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  	animation-fill-mode: forwards;
+}
+
+.rootDown{
+	animation-duration: 300ms;
+  	animation-name: rootUp;
+  	animation-iteration-count: 1;
+  	animation-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  	animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes	headerDown{
+	0%{transform: translate(0px);}
+	10%{transform: translate(-20px);}
+	20%{transform: translate(-40px);}
+	30%{transform: translate(-60px);}
+	40%{transform: translate(-80px);}
+	50%{transform: translate(-100px);}
+	60%{transform: translate(-80px);}
+	70%{transform: translate(-60px);}
+	80%{transform: translate(-40px);}
+	90%{transform: translate(-20px);}
+	100%{
+		transform: translate(0px);
+		z-index: 5;
+	}
+}
+@keyframes	rootUp{
+	0%{transform: translate(20px, 20px);}
+	10%{transform: translate(40px,20px);}
+	20%{transform: translate(60px,20px);}
+	30%{transform: translate(80px,20px);}
+	40%{transform: translate(100px,20px);}
+	50%{transform: translate(120px,20px);}
+	60%{transform: translate(100px,20px);}
+	70%{transform: translate(80px,20px);}
+	80%{transform: translate(60px,20px);}
+	90%{transform: translate(40px,20px);}
+	100%{
+		transform: translate(20px, 20px);
+		z-index: 10;
+	}
+}
+@keyframes	headerUp{
+	0%{transform: translate(0px);}
+	10%{transform: translate(-20px);}
+	20%{transform: translate(-40px);}
+	30%{transform: translate(-60px);}
+	40%{transform: translate(-80px);}
+	50%{transform: translate(-100px);}
+	60%{transform: translate(-80px);}
+	70%{transform: translate(-60px);}
+	80%{transform: translate(-40px);}
+	90%{transform: translate(-20px);}
+	100%{
+		transform: translate(0px);
+		z-index: 10;
+	}
+}
+@keyframes	rootUp{
+	0%{transform: translate(20px, 20px);}
+	10%{transform: translate(40px,20px);}
+	20%{transform: translate(60px,20px);}
+	30%{transform: translate(80px,20px);}
+	40%{transform: translate(100px,20px);}
+	50%{transform: translate(120px,20px);}
+	60%{transform: translate(100px,20px);}
+	70%{transform: translate(80px,20px);}
+	80%{transform: translate(60px,20px);}
+	90%{transform: translate(40px,20px);}
+	100%{
+		transform: translate(20px, 20px);
+		z-index: 5;
+	}
+}
+
+
+/*================PLANET ROTATION ON HOVER======================*/
+
+.rotate{
+	animation-duration: 8s;
+  	animation-name: rotate;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-fill-mode: forwards;
+}
+@keyframes	rotate{
+	0%{transform: translate(0px, 356px) rotate(0deg);}
+	100%{transform: translate(0px, 356px) rotate(1turn);}
+}
+/*================WHEELS ROTATION======================*/
+.rotateWheel{
+	animation-duration: 8s;
+  	animation-name: rotateWheel;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	animation-fill-mode: forwards;
+}
+@keyframes	rotateWheel{
+	0%{transform:  rotate(0deg);}
+	100%{transform:  rotate(1turn);}
+}
+
+
+/*======================METEOR SHOWER=======================*/
+
+.meteor{
+    animation-name: meteorShower;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+    animation-fill-mode: forwards;
+}
+.meteor1{
+	animation-duration: 1.5s;
+}
+.meteor2{
+	animation-duration: 1.7s;
+}
+.meteor3{
+	animation-duration: 2s;
+}
+@keyframes	meteorShower{
+	0%{transform: translate(0px, 0px);}
+	10%{transform: translate(-17px, 10px); opacity: 0.9}
+	20%{transform: translate(-66px, 38px); opacity: 0.5}
+	30%{transform: translate(-126px, 73px); opacity: 0.2}
+	40%{transform: translate(-173px, 98px); opacity: 0}
+	41%{transform: translate(260px, -138px); opacity: 1}
+	50%{transform: translate(260px, -138px);}
+	60%{transform: translate(181px, -105px);}
+	70%{transform: translate(149px, -83px);}
+	80%{transform: translate(92px, -53px);}
+	90%{transform: translate(33px, -19px);}
+	100%{transform: translate(0px, 0px);}
 }

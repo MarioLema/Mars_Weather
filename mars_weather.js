@@ -50,10 +50,10 @@ const processor = {
 	}
 };
 
-document.addEventListener('DOMContentLoaded', function(){
-	processor.APIcall();
-	view.updateView();
-})
+// document.addEventListener('DOMContentLoaded', function(){
+// 	processor.APIcall();
+// 	view.updateView();
+// })
 
 
 

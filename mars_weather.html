@@ -7,23 +7,32 @@
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 <body>
-	<div id='header'>
-		<h1>MARS WEATHER</h1>
-		<img src="mars.svg" id='marsPlanet'>
+	<div id='container'>
+		<div id='header'>
+			<h1>MARS WEATHER</h1>
+			<img src="mars.svg" id='marsPlanet'>
+			<img src="moon-rover.svg" id='rover'>
+			<img src="wheel.svg" class='wheel wheel1'>
+			<img src="wheel.svg" class='wheel wheel2'>
+			<img src="wheel.svg" class='wheel wheel3'>
+			<img src="mars.svg" id='marsPlanetBig'>
+			<img src="meteor1.svg" class='meteor meteor1'>
+			<img src="meteor2.svg" class='meteor meteor2'>
+			<img src="meteor3.svg" class='meteor meteor3'>
+		</div>
 		<div id='root'>
 			<img src="orbit.png" class='orbit'>
 			<img src="calendar.svg" class='calendar icon'>
 			<img src="thermometer.svg" class='thermometer icon'>
 			<img src="sand.svg" class='sand icon'>
 			<img src="sunset.svg" class='sunset icon'>
-			<p class='sol point'>sdfsdfsdfasdfasfd</p>
+			<p class='sol point'></p>
 			<p class='season point dataPoint'></p>
 			<p class='temperature point dataPoint'></p>
 			<p class='atmo dataPoint point'></p>
 			<p class='sunTime point'></p>
 		</div>
 	</div>
-
 	<p id='intro'>This app uses an API that reflects the information send back by the Curiosity Rover in Mars. The rover has 2 boom sensors on its mast in order to gather environmental information.<br><br>Although the rover is intented to send information back daily, extreme weather might make it impossible. This app reflects the latest data published by the Centro the Astrobiologia (CAB), Spain.
 	</p>
 
