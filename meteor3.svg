@@ -6,114 +6,105 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg8663"
+   id="svg841"
    version="1.1"
    viewBox="0 0 12.7 12.7"
    height="48"
    width="48">
   <defs
-     id="defs8657">
+     id="defs835">
     <linearGradient
-       gradientTransform="translate(164.22753,-47.161487)"
-       gradientUnits="userSpaceOnUse"
-       y2="217.08641"
-       x2="-76.706352"
-       y1="218.56792"
-       x1="-175.41283"
+       id="linearGradient1473">
+      <stop
+         id="stop1469"
+         offset="0"
+         style="stop-color:#d4a900;stop-opacity:1;" />
+      <stop
+         id="stop1471"
+         offset="1"
+         style="stop-color:#d4a900;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient7675"
        id="linearGradient7677"
-       xlink:href="#linearGradient7675" />
+       x1="-175.41283"
+       y1="218.56792"
+       x2="-76.706352"
+       y2="217.08641"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(164.22753,-47.161487)" />
     <linearGradient
        id="linearGradient7675">
       <stop
-         id="stop7671"
+         style="stop-color:#d4aa00;stop-opacity:1;"
          offset="0"
-         style="stop-color:#d4aa00;stop-opacity:1;" />
+         id="stop7671" />
       <stop
-         id="stop7673"
+         style="stop-color:#d4aa00;stop-opacity:0;"
          offset="1"
-         style="stop-color:#d4aa00;stop-opacity:0;" />
+         id="stop7673" />
     </linearGradient>
     <filter
-       id="filter7743"
-       style="color-interpolation-filters:sRGB">
+       style="color-interpolation-filters:sRGB"
+       id="filter7743">
       <feGaussianBlur
-         id="feGaussianBlur7737"
+         stdDeviation="0.1"
          result="blur"
-         stdDeviation="0.1" />
+         id="feGaussianBlur7737" />
       <feComposite
-         id="feComposite7739"
-         result="composite1"
-         operator="in"
+         in="SourceGraphic"
          in2="blur"
-         in="SourceGraphic" />
-      <feComposite
-         id="feComposite7741"
-         result="composite2"
          operator="in"
+         result="composite1"
+         id="feComposite7739" />
+      <feComposite
+         in="composite1"
          in2="composite1"
-         in="composite1" />
+         operator="in"
+         result="composite2"
+         id="feComposite7741" />
     </filter>
     <linearGradient
-       gradientTransform="matrix(0.54195011,0,0,0.54195011,144.69164,135.46743)"
+       xlink:href="#linearGradient7675"
+       id="linearGradient7677-2"
+       x1="-175.41283"
+       y1="218.56792"
+       x2="-76.706352"
+       y2="217.08641"
        gradientUnits="userSpaceOnUse"
-       y2="56.985119"
-       x2="-16.819941"
-       y1="56.985119"
-       x1="-256.64584"
-       id="linearGradient7661"
-       xlink:href="#linearGradient7675" />
+       gradientTransform="translate(164.22753,-47.161487)" />
     <filter
-       id="filter7759"
-       style="color-interpolation-filters:sRGB">
+       style="color-interpolation-filters:sRGB"
+       id="filter7743-0">
       <feGaussianBlur
-         id="feGaussianBlur7753"
+         stdDeviation="0.1"
          result="blur"
-         stdDeviation="0.1" />
+         id="feGaussianBlur7737-6" />
       <feComposite
-         id="feComposite7755"
-         result="composite1"
-         operator="in"
+         in="SourceGraphic"
          in2="blur"
-         in="SourceGraphic" />
-      <feComposite
-         id="feComposite7757"
-         result="composite2"
          operator="in"
+         result="composite1"
+         id="feComposite7739-6" />
+      <feComposite
+         in="composite1"
          in2="composite1"
-         in="composite1" />
+         operator="in"
+         result="composite2"
+         id="feComposite7741-7" />
     </filter>
     <linearGradient
-       gradientTransform="matrix(0.69555557,0,0,0.60716287,186.83763,156.87036)"
+       gradientTransform="matrix(1.1052029,0,0,1.0170947,-145.52211,-43.412911)"
        gradientUnits="userSpaceOnUse"
-       y2="28.164436"
-       x2="-114.14881"
-       y1="28.636906"
-       x1="-258.34671"
-       id="linearGradient7669"
-       xlink:href="#linearGradient7675" />
-    <filter
-       id="filter7751"
-       style="color-interpolation-filters:sRGB">
-      <feGaussianBlur
-         id="feGaussianBlur7745"
-         result="blur"
-         stdDeviation="0.1" />
-      <feComposite
-         id="feComposite7747"
-         result="composite1"
-         operator="in"
-         in2="blur"
-         in="SourceGraphic" />
-      <feComposite
-         id="feComposite7749"
-         result="composite2"
-         operator="in"
-         in2="composite1"
-         in="composite1" />
-    </filter>
+       y2="293.32492"
+       x2="3.1982062"
+       y1="293.28463"
+       x1="-1.4106686"
+       id="linearGradient1475"
+       xlink:href="#linearGradient1473" />
   </defs>
   <metadata
-     id="metadata8660">
+     id="metadata838">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -128,13 +119,13 @@
      transform="translate(0,-284.3)"
      id="layer1">
     <rect
-       style="opacity:1;fill:url(#linearGradient7669);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.95854062;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter7751)"
-       id="rect7631-6"
-       width="83.655365"
-       height="2.9209702"
-       x="28.744825"
-       y="172.33817"
-       ry="1.4604851"
-       transform="matrix(0.12054071,-0.06959422,0.06959422,0.12054071,-14.252242,274.61163)" />
+       transform="rotate(-30)"
+       ry="0.18924312"
+       y="254.69604"
+       x="-147.08118"
+       height="0.37848625"
+       width="14.51089"
+       id="rect1425"
+       style="opacity:1;fill:url(#linearGradient1475);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8215543;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>

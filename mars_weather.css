@@ -81,6 +81,7 @@ body{
 .wheel3{
 	left: 188px;
 }
+/*==================================================*/
 .meteor{
 	position: absolute;
 }
@@ -90,9 +91,9 @@ body{
 	width: 160px;
 }
 .meteor2{
-	left: 104px;
-    top: 81px;
-    width: 236px;
+    left: 143px;
+    top: 105px;
+    width: 151px;
 
 }
 .meteor3{
@@ -196,7 +197,7 @@ a:visited{
 	color: black;
 }
 
-/*=============CARD ANIMATIONS==========================*/
+/*=============SHOW CARD==========================*/
 
 .headerDown{
 	animation-duration: 300ms;
@@ -213,25 +214,6 @@ a:visited{
   	animation-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
   	animation-fill-mode: forwards;
 }
-
-.headerUp{
-	animation-duration: 300ms;
-  	animation-name: headerDown;
-  	animation-iteration-count: 1;
-  	animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  	animation-fill-mode: forwards;
-}
-
-.rootDown{
-	animation-duration: 300ms;
-  	animation-name: rootUp;
-  	animation-iteration-count: 1;
-  	animation-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  	animation-fill-mode: forwards;
-}
-
-
-
 
 @keyframes	headerDown{
 	0%{transform: translate(0px);}
@@ -265,6 +247,27 @@ a:visited{
 		z-index: 10;
 	}
 }
+
+
+
+/*=============SHOW HEADER==========================*/
+
+.headerUp{
+	animation-duration: 300ms;
+  	animation-name: headerUp;
+  	animation-iteration-count: 1;
+  	animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  	animation-fill-mode: forwards;
+}
+
+.rootDown{
+	animation-duration: 300ms;
+  	animation-name: rootDown;
+  	animation-iteration-count: 1;
+  	animation-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  	animation-fill-mode: forwards;
+}
+
 @keyframes	headerUp{
 	0%{transform: translate(0px);}
 	10%{transform: translate(-20px);}
@@ -281,7 +284,7 @@ a:visited{
 		z-index: 10;
 	}
 }
-@keyframes	rootUp{
+@keyframes	rootDown{
 	0%{transform: translate(20px, 20px);}
 	10%{transform: translate(40px,20px);}
 	20%{transform: translate(60px,20px);}
@@ -301,37 +304,37 @@ a:visited{
 
 /*================PLANET ROTATION ON HOVER======================*/
 
-.rotate{
+.rotatePlanet{
 	animation-duration: 8s;
-  	animation-name: rotate;
+  	animation-name: rotatePlanet;
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
   	animation-fill-mode: forwards;
 }
-@keyframes	rotate{
+@keyframes	rotatePlanet{
 	0%{transform: translate(0px, 356px) rotate(0deg);}
 	100%{transform: translate(0px, 356px) rotate(1turn);}
 }
 /*================WHEELS ROTATION======================*/
-.rotateWheel{
+.rotateWheels{
 	animation-duration: 8s;
-  	animation-name: rotateWheel;
+  	animation-name: rotateWheels;
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
   	animation-fill-mode: forwards;
 }
-@keyframes	rotateWheel{
+@keyframes	rotateWheels{
 	0%{transform:  rotate(0deg);}
-	100%{transform:  rotate(1turn);}
+	100%{transform:  rotate(-1turn);}
 }
 
 
 /*======================METEOR SHOWER=======================*/
 
-.meteor{
+.meteorShower{
     animation-name: meteorShower;
     animation-iteration-count: infinite;
-    animation-timing-function: step-end;
+    animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 .meteor1{
@@ -343,17 +346,9 @@ a:visited{
 .meteor3{
 	animation-duration: 2s;
 }
+
+
 @keyframes	meteorShower{
-	0%{transform: translate(0px, 0px);}
-	10%{transform: translate(-17px, 10px); opacity: 0.9}
-	20%{transform: translate(-66px, 38px); opacity: 0.5}
-	30%{transform: translate(-126px, 73px); opacity: 0.2}
-	40%{transform: translate(-173px, 98px); opacity: 0}
-	41%{transform: translate(260px, -138px); opacity: 1}
-	50%{transform: translate(260px, -138px);}
-	60%{transform: translate(181px, -105px);}
-	70%{transform: translate(149px, -83px);}
-	80%{transform: translate(92px, -53px);}
-	90%{transform: translate(33px, -19px);}
-	100%{transform: translate(0px, 0px);}
+	0%{transform: translate(260px, -138px);}
+	100%{transform: translate(-173px, 98px); opacity: 0}
 }
