@@ -222,31 +222,16 @@ a:visited{
 
 @keyframes	headerDown{
 	0%{transform: translate(0px);}
-	10%{transform: translate(-20px);}
-	20%{transform: translate(-40px);}
-	30%{transform: translate(-60px);}
-	40%{transform: translate(-80px);}
 	50%{transform: translate(-100px);}
-	60%{transform: translate(-80px);}
-	70%{transform: translate(-60px);}
-	80%{transform: translate(-40px);}
-	90%{transform: translate(-20px);}
 	100%{
 		transform: translate(0px);
 		z-index: 5;
 	}
 }
+
 @keyframes	rootUp{
 	0%{transform: translate(20px, 20px);}
-	10%{transform: translate(40px,20px);}
-	20%{transform: translate(60px,20px);}
-	30%{transform: translate(80px,20px);}
-	40%{transform: translate(100px,20px);}
 	50%{transform: translate(120px,20px);}
-	60%{transform: translate(100px,20px);}
-	70%{transform: translate(80px,20px);}
-	80%{transform: translate(60px,20px);}
-	90%{transform: translate(40px,20px);}
 	100%{
 		transform: translate(20px, 20px);
 		z-index: 10;
@@ -275,15 +260,7 @@ a:visited{
 
 @keyframes	headerUp{
 	0%{transform: translate(0px);}
-	10%{transform: translate(-20px);}
-	20%{transform: translate(-40px);}
-	30%{transform: translate(-60px);}
-	40%{transform: translate(-80px);}
 	50%{transform: translate(-100px);}
-	60%{transform: translate(-80px);}
-	70%{transform: translate(-60px);}
-	80%{transform: translate(-40px);}
-	90%{transform: translate(-20px);}
 	100%{
 		transform: translate(0px);
 		z-index: 10;
@@ -291,15 +268,7 @@ a:visited{
 }
 @keyframes	rootDown{
 	0%{transform: translate(20px, 20px);}
-	10%{transform: translate(40px,20px);}
-	20%{transform: translate(60px,20px);}
-	30%{transform: translate(80px,20px);}
-	40%{transform: translate(100px,20px);}
 	50%{transform: translate(120px,20px);}
-	60%{transform: translate(100px,20px);}
-	70%{transform: translate(80px,20px);}
-	80%{transform: translate(60px,20px);}
-	90%{transform: translate(40px,20px);}
 	100%{
 		transform: translate(20px, 20px);
 		z-index: 5;
