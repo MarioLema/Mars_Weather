@@ -1,3 +1,4 @@
+//==================STATE HOLDER==================
 let state = {
 	sol: '--',
 	month: '--',
@@ -8,8 +9,9 @@ let state = {
 	sunrise: '--',
 	cardShown: false
 };
-
+//==================DOM UPDATE==================
 const view = {
+	//DOM SELECTORS
 	selectors: {	
 	sol: document.querySelector('.sol'),
 	month: document.querySelector('.season'),
@@ -23,6 +25,7 @@ const view = {
 	header: document.getElementById('header'),
 	root: document.getElementById('root'),
 	},
+	//UPDATES DOM AFTER API CALL
 	updateView: function(){
 		this.selectors.sol.innerText = `SOL: ${state.sol}`;
 		this.selectors.month.innerText = `MONTH: ${state.month}`;
@@ -30,11 +33,13 @@ const view = {
 		this.selectors.opacity.innerText = `OPACITY: ${state.opacity}`;
 		this.selectors.sunTime.innerText = `SUNRISE: ${state.sunrise}\nSUNSET: ${state.sunset}`;
 	},
+	//STARTS ANIMATIONS FOR THE HEADER CARD
 	headerAnimation: function(){
 		this.selectors.planet.classList.add('rotatePlanet');
 		this.selectors.rover.forEach( wheel => wheel.classList.add('rotateWheels'));
 		this.selectors.meteors.forEach( meteor => meteor.classList.add('meteorShower'));
 	},
+	//STARTS ANIMATION HEADER BEHIND ROOT
 	showCard: function(){
 		this.selectors.header.classList.remove('headerUp');
 		this.selectors.root.classList.remove('rootDown');
@@ -42,6 +47,7 @@ const view = {
 		this.selectors.root.classList.add('rootUp');
 
 	},
+	//STARTS ANIMATION ROOT BEHIND HEADER
 	showHeader: function(){
 		this.selectors.header.classList.remove('headerDown');
 		this.selectors.root.classList.remove('rootUp');
@@ -53,7 +59,7 @@ const view = {
 
 
 
-
+//==============MANAGES API CALL AND CARD POSITIONS============
 const processor = {
 	APIcall: function(){
 		fetch('https://api.maas2.jiinxt.com/')
@@ -86,6 +92,8 @@ const processor = {
 	}
 };
 
+
+//===========DOCUMENT LISTENERS AND FUNCTION CALLS==================
 document.addEventListener('DOMContentLoaded', function(){
 	processor.APIcall();
 	view.updateView();

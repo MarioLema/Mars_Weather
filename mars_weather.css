@@ -1,3 +1,4 @@
+/*PAGE BASIC SETUP*/
 html{
     box-sizing: border-box;
 }
@@ -21,7 +22,9 @@ body{
 #intro, #description{
 	    width: 70%;
 	    margin-top: 20px;
+	    max-width: 900px;
 }
+/*header card*/
 #header {
 	width: 350px;
 	height: 450px;
@@ -44,11 +47,13 @@ body{
     z-index: 5;
     align-self: center;
 }
+/*top-right Mars image*/
 #marsPlanet{
     width: 8em;
     grid-column: 2/-1;
     grid-row: 1/2;
 }
+/*bottom Mars image with animation*/
 #marsPlanetBig{
 	position: absolute;
     width: 450px;
@@ -56,6 +61,7 @@ body{
     justify-self: center;
     transform: translate(0px, 356px);
 }
+/*rover image and wheels*/
 #rover{
 	width: 80px;
     position: absolute;
@@ -81,7 +87,7 @@ body{
 .wheel3{
 	left: 188px;
 }
-/*==================================================*/
+/*meteor images*/
 .meteor{
 	position: absolute;
 }
@@ -94,13 +100,11 @@ body{
     left: 143px;
     top: 105px;
     width: 151px;
-
 }
 .meteor3{
 	left: 172px;
     top: 119px;
     width: 148px;
-
 }
 
 
@@ -108,7 +112,7 @@ body{
 
 
 
-
+/*root card*/
 #root {
 	width: 350px;
 	height: 450px;
@@ -168,6 +172,7 @@ body{
 .sunset{
 	grid-area: sunset;
 }
+/*info text*/
 .icon{
 	height: 40px;
     opacity: 0.6;
