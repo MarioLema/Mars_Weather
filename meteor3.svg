@@ -6,13 +6,48 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg841"
    version="1.1"
    viewBox="0 0 12.7 12.7"
    height="48"
-   width="48">
+   width="48"
+   sodipodi:docname="meteor3.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3234"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="19.076733"
+     inkscape:cy="13.895554"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg841" />
   <defs
      id="defs835">
+    <linearGradient
+       id="linearGradient3829">
+      <stop
+         id="stop3825"
+         offset="0"
+         style="stop-color:#d4aa00;stop-opacity:1;" />
+      <stop
+         id="stop3827"
+         offset="1"
+         style="stop-color:#550000;stop-opacity:1" />
+    </linearGradient>
     <linearGradient
        id="linearGradient1473">
       <stop
@@ -102,6 +137,28 @@
        x1="-1.4106686"
        id="linearGradient1475"
        xlink:href="#linearGradient1473" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3206"
+       id="linearGradient3210"
+       gradientUnits="userSpaceOnUse"
+       x1="-158.1517"
+       y1="254.92119"
+       x2="-139.84875"
+       y2="254.8987"
+       gradientTransform="translate(142.15,-246.21103)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3206">
+      <stop
+         style="stop-color:#a91209;stop-opacity:1;"
+         offset="0"
+         id="stop3202" />
+      <stop
+         style="stop-color:#a91209;stop-opacity:0;"
+         offset="1"
+         id="stop3204" />
+    </linearGradient>
   </defs>
   <metadata
      id="metadata838">
@@ -111,7 +168,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -128,4 +185,13 @@
        id="rect1425"
        style="opacity:1;fill:url(#linearGradient1475);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8215543;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
+  <rect
+     transform="rotate(-30)"
+     ry="0.18924312"
+     y="8.4850159"
+     x="-4.9311767"
+     height="0.37848625"
+     width="14.510891"
+     id="rect1425-3"
+     style="opacity:1;fill:url(#linearGradient3210);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8215543;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
 </svg>

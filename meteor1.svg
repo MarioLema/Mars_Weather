@@ -21,6 +21,18 @@
      id="defs835">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient2553">
+      <stop
+         style="stop-color:#a91209;stop-opacity:1;"
+         offset="0"
+         id="stop2549" />
+      <stop
+         style="stop-color:#a91209;stop-opacity:0;"
+         offset="1"
+         id="stop2551" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient1473">
       <stop
          style="stop-color:#d4a900;stop-opacity:1;"
@@ -110,6 +122,16 @@
        y2="293.26904"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.1052029,0,0,1.0170947,-145.52211,-43.412911)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2553"
+       id="linearGradient2555"
+       x1="-157.62653"
+       y1="256.02338"
+       x2="-138.41081"
+       y2="256.00714"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.50456238,-1.1746216)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -118,9 +140,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
-     inkscape:cx="24.91798"
-     inkscape:cy="17.142178"
+     inkscape:zoom="11.2"
+     inkscape:cx="25.199508"
+     inkscape:cy="17.183267"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -138,7 +160,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -151,6 +173,15 @@
        style="opacity:1;fill:url(#linearGradient1475);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8215543;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect1425"
        width="14.51089"
+       height="0.37848625"
+       x="-147.08118"
+       y="254.69604"
+       ry="0.18924312"
+       transform="rotate(-30)" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient2555);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8215543;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect1425-2"
+       width="14.510891"
        height="0.37848625"
        x="-147.08118"
        y="254.69604"

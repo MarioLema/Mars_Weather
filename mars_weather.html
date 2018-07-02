@@ -4,33 +4,48 @@
 	<title>Mars Weather App</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="mars_weather.css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rosario:700" rel="stylesheet">
 </head>
 <body>
 	<div id='container'>
-		<div id='header'>
+		<div id='header' class='card'>
 			<h1>MARS WEATHER</h1>
-			<img src="mars.svg" id='marsPlanet'>
-			<img src="moon-rover.svg" id='rover'>
-			<img src="wheel.svg" class='wheel wheel1'>
-			<img src="wheel.svg" class='wheel wheel2'>
-			<img src="wheel.svg" class='wheel wheel3'>
-			<img src="mars.svg" id='marsPlanetBig'>
+			<img src="mountains.svg" id='marsMountains'>
 			<img src="meteor1.svg" class='meteor meteor1'>
 			<img src="meteor2.svg" class='meteor meteor2'>
 			<img src="meteor3.svg" class='meteor meteor3'>
 		</div>
-		<div id='root'>
-			<img src="orbit.png" class='orbit'>
-			<img src="calendar.svg" class='calendar icon'>
-			<img src="thermometer.svg" class='thermometer icon'>
-			<img src="sand.svg" class='sand icon'>
-			<img src="sunset.svg" class='sunset icon'>
-			<p class='sol point'></p>
-			<p class='season point dataPoint'></p>
-			<p class='temperature point dataPoint'></p>
-			<p class='atmo dataPoint point'></p>
-			<p class='sunTime point'></p>
+
+		<div id='root' class='card'>
+			<div class='section'>
+				<p>SOL</p>
+				<p class='sol rectangle'></p>
+			</div>
+			<div class='section'>
+				<p>MONTH</p>
+				<p class='season rectangle'></p>
+			</div>
+			<div class='section'>
+				<p>MIN °C</p>
+				<p class='min rectangle'></p>
+			</div>
+			<div class='section'>
+				<p>MAX °C</p>
+				<p class='max rectangle'></p>
+			</div>
+			<div class='section'>
+				<p>OPACITY</p>
+				<p class='atmo rectangle'></p>
+			</div>
+			<div class='section'>
+				<p>SUNRISE</p>				
+				<p class='sunrise rectangle'></p>
+			</div>
+			<div class='section'>
+				<p>SUNSET</p>
+				<p class='sunset rectangle'></p>
+			</div>
+			<img src="orbit.svg" class='orbit'>
 		</div>
 	</div>
 	<p id='intro'>This app uses an API that reflects the information send back by the Curiosity Rover in Mars. The rover has 2 boom sensors on its mast in order to gather environmental information.<br><br>Although the rover is intented to send information back daily, extreme weather might make it impossible. This app reflects the latest data published by the Centro the Astrobiologia (CAB), Spain.

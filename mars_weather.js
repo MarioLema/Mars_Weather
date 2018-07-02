@@ -15,28 +15,28 @@ const view = {
 	selectors: {	
 	sol: document.querySelector('.sol'),
 	month: document.querySelector('.season'),
-	temperature: document.querySelector('.temperature'),
+	min: document.querySelector('.min'),
+	max: document.querySelector('.max'),
 	opacity: document.querySelector('.atmo'),
-	sunTime: document.querySelector('.sunTime'),
+	sunrise: document.querySelector('.sunrise'),
+	sunset: document.querySelector('.sunset'),
 	meteors: document.querySelectorAll('.meteor'),
-	rover: document.querySelectorAll('.wheel'),
-	planet: document.getElementById('marsPlanetBig'),
 	container: document.getElementById('container'),
 	header: document.getElementById('header'),
 	root: document.getElementById('root'),
 	},
 	//UPDATES DOM AFTER API CALL
 	updateView: function(){
-		this.selectors.sol.innerText = `SOL: ${state.sol}`;
-		this.selectors.month.innerText = `MONTH: ${state.month}`;
-		this.selectors.temperature.innerText = `MIN \xB0C: ${state.minC}\nMAX \xB0C: ${state.maxC}`;
-		this.selectors.opacity.innerText = `OPACITY: ${state.opacity}`;
-		this.selectors.sunTime.innerText = `SUNRISE: ${state.sunrise}\nSUNSET: ${state.sunset}`;
+		this.selectors.sol.innerText = state.sol;
+		this.selectors.month.innerText = state.month;
+		this.selectors.min.innerText = state.minC;
+		this.selectors.max.innerText = state.maxC;
+		this.selectors.opacity.innerText = state.opacity;
+		this.selectors.sunrise.innerText = state.sunrise;
+		this.selectors.sunset.innerText = state.sunset;
 	},
 	//STARTS ANIMATIONS FOR THE HEADER CARD
 	headerAnimation: function(){
-		this.selectors.planet.classList.add('rotatePlanet');
-		this.selectors.rover.forEach( wheel => wheel.classList.add('rotateWheels'));
 		this.selectors.meteors.forEach( meteor => meteor.classList.add('meteorShower'));
 	},
 	//STARTS ANIMATION HEADER BEHIND ROOT
