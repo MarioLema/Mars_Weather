@@ -28,9 +28,7 @@ body{
 .card{
     width: 350px;
     height: 450px;
-    background-color: #0cbaba;
-    background-image: url(stars.png),linear-gradient(45deg, #0cbaba -59%, #380036 74%);
-    background-size: cover;
+    background-color: #1e2a2e;
     border-radius: 15px;
     box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.26);
     display: flex;
@@ -57,9 +55,8 @@ body{
 #header h1{
     z-index: 5;
     margin: 70px auto auto auto;
-    border: solid 1px;
+    border-bottom: solid 1px;
     padding: 14px;
-    border-radius: 5px;
     letter-spacing: 4px;
 }
 #marsMountains{
@@ -67,6 +64,7 @@ body{
     width: 350px;
     left: 0;
     top: 173px;
+    opacity: 0.7;
 }
 /*meteor images*/
 .meteor{
@@ -98,9 +96,10 @@ body{
 	font-size: 15px;
 }
 .rectangle{
-	border-radius: 7px;
-    background: #f49d3733;
+    border-radius: 7px;
     color: #f49d37;
+    border: solid 1px #f49d3759;
+    background: #1e2a2e;
     width: 70px;
     height: 35px;
     text-align: center;
@@ -114,7 +113,7 @@ body{
     top: 153px;
     position: absolute;
     z-index: -5;
-    opacity: 0.6;
+    opacity: 0.3;
 }
 /*info text*/
 dd{
@@ -130,6 +129,7 @@ a:hover{
 a:visited{
 	color: black;
 }
+
 
 /*=============SHOW CARD==========================*/
 
